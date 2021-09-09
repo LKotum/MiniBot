@@ -1,5 +1,5 @@
 # !/bin/bash
-cd /home/pi/MiniBot
+cd /home/pi/
 source ./bashrc
 workon MiniBot
-sudo python ./src/app.py 
+sudo python ./MiniBot/src/app.py 
