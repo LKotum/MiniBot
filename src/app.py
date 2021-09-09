@@ -8,4 +8,4 @@ except:
 
 from libs.logger import logger
 
-print("worked!")
+lg = logger()
