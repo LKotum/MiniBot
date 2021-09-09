@@ -21,7 +21,7 @@ else:
 
 try:
     from libs.logger import logger
-    lg = logger(log_mode=bool(config.get("LOGGING", "logging")), path_to_log=config.get("LOGGING", "path"), time_print=bool(config.get("LOGGING", "time")), debug_mode=bool(config.get("LOGGING", "debug")), format='%'+str(config.get("LOGGING", "format")))
+    lg = logger(log_mode=bool(config.get("LOGGING", "logging")), path_to_log=config.get("LOGGING", "path"), time_print=bool(config.get("LOGGING", "time")), debug_mode=bool(config.get("LOGGING", "debug")), format='%'+str(config.get("LOGGING", "timeformat")))
 except:
     print("logger: import error")
     exit()
