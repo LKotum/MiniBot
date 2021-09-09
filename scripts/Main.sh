@@ -1,6 +1,6 @@
 # !/bin/bash
-cd /home/pi/
-source ~/.bashrc
+cd ..
+source /home/pi/.bashrc
 workon MiniBot
-cd /MiniBot/src
+cd /home/pi/MiniBot/src
 sudo python app.py 
