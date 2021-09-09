@@ -1,0 +1,29 @@
+["runFile" : mode = 1]
+    "fileManager" : id = 0
+
+["info" : mode = 0] 
+    "ip" : id = 0
+    "cpu" : id = 1
+    "disk" : id = 2
+    "memory" : id = 3
+    "version" : id = 4
+
+["settings" : mode = 0] 
+    "bluetooth" : id = 0
+    "wifi" : id = 1
+    "ssh" : id = 2
+    "passwd" : id = 3
+    "reset" : id = 4
+
+["usbConfig" : mode = 0]
+    "usbConfigurator" : id = 0
+    "auto" : id = 1
+
+["update" : mode = 0] 
+    "updateSys" : id = 0
+    "updateLib" : id = 1
+    "updateMinibot" : id = 2
+
+["power" : mode = 0] 
+    "reboot" : id = 0
+    "shutdown" : id = 1 
