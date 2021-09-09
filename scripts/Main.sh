@@ -2,4 +2,5 @@
 cd /home/pi/
 source ~/.bashrc
 workon MiniBot
-sudo python ./MiniBot/src/app.py 
+cd /MiniBot/src
+sudo python app.py 

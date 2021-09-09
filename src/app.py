@@ -5,7 +5,7 @@ try:
     import ConfigParser
 except:
     import configparser
-    
+
 from libs.logger import logger
 
 print("worked!")
