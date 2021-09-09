@@ -21,7 +21,7 @@ else:
 
 try:
     from libs.logger import logger
-    lg = logger(log_mode=bool(config.get("LOGGING", "logging")), path_to_log=config.get("LOGGING", "path"), time_print=bool(config.get("LOGGING", "time")), debug_mode=bool(config.get("LOGGING", "debug")), format='%'+str(config.get("LOGGING", "timeformat")))
+    lg = logger(log_mode=bool(config.get("LOGGING", "logging")), path_to_log=config.get("LOGGING", "path"), time_print=bool(config.get("LOGGING", "time")), debug_mode=bool(config.get("LOGGING", "debug")), format='%'+str(config.get("LOGGING", "format")))
 except:
     print("logger: import error")
     exit()
@@ -63,4 +63,10 @@ except:
 else:
     lg.out("pillow: imported", 'd')
 
-print("Hello")
+try:
+    import numpy as np
+except:
+    lg.out("numpy: import error", 'e')
+    exit()
+else:
+    lg.out("numpy: imported", 'd')
