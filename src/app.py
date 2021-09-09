@@ -4,15 +4,12 @@ import os
 path_config = './config/MiniBot.conf'
 
 try:
-    import ConfigParser
+    import configparser
 except:
-    try:
-        import configparser
-    except:
-        print("configparser: import error")
-        exit()
-    else:
-        print("configparser: imported")
+    print("configparser: import error")
+    exit()
+else:
+    print("configparser: imported")
 
 if not os.path.exists(path_config):
     print("configparser: error path to config")
