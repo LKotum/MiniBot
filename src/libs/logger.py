@@ -21,7 +21,6 @@ class logger:
             self.format = "%X"
         else:
             check = check_format(kwargs['format'])
-            print(check, kwargs['format'])
             if check:
                 self.format = kwargs['format']
             else:
