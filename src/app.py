@@ -9,3 +9,5 @@ except:
 from libs.logger import logger
 
 lg = logger()
+
+print("Hello")
