@@ -20,8 +20,7 @@ class logger:
         if(kwargs.get('format') == None):
             self.format = "%X"
         else:
-            check = check_format(kwargs['format'])
-            if check:
+            if check_format(kwargs['format']):
                 self.format = kwargs['format']
             else:
                 self.format = "%X"
