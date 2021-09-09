@@ -1,4 +1,5 @@
 # !/bin/bash
 cd /home/pi/
-source ".env/bin/activate"
+source ~/.bashrc
+workon MiniBot
 sudo python ./MiniBot/src/app.py 
